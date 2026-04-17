@@ -35,6 +35,7 @@ public class Saucedemo_Login {
 		Thread.sleep(3000);
 		// Locate the focusable popup element
 		WebElement popupElement = driver.findElement(By.id("userForm"));
+		driver.navigate().refresh();
 
 		// Use Actions class to send keys
 		Actions actions = new Actions(driver);
